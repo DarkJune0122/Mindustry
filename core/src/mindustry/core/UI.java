@@ -37,6 +37,8 @@ public class UI implements ApplicationListener, Loadable{
 
     public static PixmapPacker packer;
 
+    public static final UI instance;
+
     public MenuFragment menufrag;
     public HudFragment hudfrag;
     public ChatFragment chatfrag;
@@ -84,6 +86,7 @@ public class UI implements ApplicationListener, Loadable{
 
     public UI(){
         Fonts.loadFonts();
+        instance = this;
     }
 
     public static void loadColors(){

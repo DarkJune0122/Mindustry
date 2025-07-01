@@ -88,7 +88,7 @@ public class EditorMapsDialog extends MapListDialog{
     }
 
     @Override
-    void showMap(Map map){
+    protected void showMap(Map map){
         BaseDialog dialog = activeDialog = new BaseDialog("@editor.mapinfo");
         dialog.addCloseButton();
 

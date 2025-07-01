@@ -10,7 +10,7 @@ public class CustomGameDialog extends MapListDialog{
     }
 
     @Override
-    void showMap(Map map){
+    protected void showMap(Map map){
         dialog.show(map);
     }
 }

@@ -17,7 +17,7 @@ import mindustry.ui.*;
 import static mindustry.Vars.*;
 
 public abstract class MapListDialog extends BaseDialog{
-    BaseDialog activeDialog;
+    protected BaseDialog activeDialog;
 
     private String searchString;
     private Seq<Gamemode> modes = new Seq<>();
@@ -51,7 +51,7 @@ public abstract class MapListDialog extends BaseDialog{
 
     void buildButtons(){}
 
-    abstract void showMap(Map map);
+    protected abstract void showMap(Map map);
 
     void setup(){
         makeButtonOverlay();
